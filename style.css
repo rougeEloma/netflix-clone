@@ -1,0 +1,473 @@
+/* universal styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+  z-index: 10;
+}
+
+.navbar-brand {
+  width: 100px;
+  height: 100%;
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.signin {
+  background-color: #dc030f;
+  border: 1px solid #dc030f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.signin:hover {
+  background-color: #b11018;
+  border: 1px solid #b11018;
+}
+
+.navbar-nav-items {
+  display: flex;
+  gap: 10px;
+}
+
+ /* hero section */
+
+.hero-bg-image-container {
+  width: 100%;
+  height: 80vh;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.hero-card {
+  position: absolute;
+  top: 20%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.hero-subtitle,
+.hero-description {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.email-input {
+  border: 0.5px solid rgb(182, 182, 182);
+  border-radius: 4px;
+  background: transparent;
+  background-color: rgba(17, 17, 17, 0.726);
+  width: 100%;
+  height: 100%;
+  margin-right: 5px;
+}
+.email-label {
+  color: black;
+  position: absolute;
+  top: 28%;
+  left: 2%;
+  color: rgb(201, 201, 201);
+  transition: 0.5s;
+}
+
+.email-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-container {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  padding-right: 5px;
+}
+
+.email-input:focus + .email-label {
+  top: 0.2rem;
+  font-size: 10px;
+}
+
+
+.email-input:focus-visible {
+  outline: none;
+}
+
+.primary-button {
+  background-color: #dc030f;
+  border: 1px solid #dc030f;
+  border-radius: 4px;
+  color: white;
+  padding: 1.2rem 1.2rem;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.primary-button:hover {
+  background-color: #bb040d;
+  border: 1px solid #bb040d;
+}
+
+ /* features section */ 
+
+.feature {
+  border-top: 4px solid #222;
+  padding: 2rem 1rem;
+}
+
+.feature-details {
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.feature-sub-title {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.feature-image-container {
+  width: 100%;
+  position: relative;
+}
+.feature-image {
+  width: 100%;
+}
+
+
+.feature-2-poster-container {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 16em;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  height: 60px;
+  padding: 0.25rem 0.6rem;
+  gap: 15px;
+}
+
+.poster-container {
+  width: 20%;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+}
+
+ /* FAQ section */
+ 
+.FAQ-list-container {
+  border-top: 4px solid #222;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.FAQ-list {
+  flex-grow: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FAQ-accordian {
+  width: 90%;
+}
+
+.FAQ-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 30px;
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: white;
+}
+
+.FAQ-title:hover {
+  background-color: #535353;
+  border: 1px solid #535353;
+}
+
+.FAQ-heading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 3rem;
+}
+
+
+.FAQ-get-started-email > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+
+
+ /* footer */
+
+footer {
+  border-top: 4px solid #333;
+  padding: 2rem 1rem;
+  color: #757575;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.footer-row-1 > h4 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer-row-3 > .dropdown-container {
+  width: fit-content;
+  border: 1px solid #757575;
+  color: #757575;
+}
+
+.footer-row-3 > .dropdown-container > .language-drop-down {
+  color: #757575;
+}
+
+ /* responsive */
+
+@media (min-width: 768px) {
+  .hero-bg-image-container {
+    height: 100vh;
+  }
+
+  .hero-bg-overlay {
+    height: 100vh;
+  }
+  .hero-card {
+    top: 40%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle,
+  .hero-description {
+    font-size: 1.3rem;
+  }
+
+  .feature {
+    padding: 4rem;
+  }
+
+  .feature-title {
+    font-size: 35px;
+  }
+
+  .feature-sub-title {
+    font-size: 20px;
+  }
+  .feature-2-poster-container {
+    max-width: 26em;
+    height: 85px;
+  }
+  .poster-container {
+    width: 15%;
+  }
+  .download-gif-container {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .poster-details > h4 {
+    font-size: 18px;
+  }
+  .poster-details > h6 {
+    font-size: 14px;
+  }
+  .FAQ-title {
+    font-size: 20px;
+  }
+  .FAQ-heading {
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .FAQ-list {
+    padding: 1rem 5rem;
+  }
+  .FAQ-get-started-email {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(15%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 2% 5%;
+  }
+
+  .navbar-brand {
+    width: 150px;
+  }
+
+  .signin-button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .dropdown-container {
+    padding: 10px 5px;
+  }
+
+  .navbar-nav-items {
+    gap: 30px;
+  }
+
+  .hero-card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-container {
+    width: 50%;
+  }
+  .email-form-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+  }
+  .primary-button {
+    height: 50px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .feature-details {
+    text-align: left;
+    padding: 0 6rem;
+  }
+
+  .feature-title {
+    font-size: 50px;
+  }
+
+  .feature-sub-title {
+    font-size: 25px;
+  }
+
+  .feature-image-container {
+    max-width: 500px;
+  }
+
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .feature-2-poster-container {
+    max-width: 20em;
+    height: 100px;
+    padding: 1rem;
+  }
+  .poster-container {
+    width: 20%;
+  }
+  .FAQ-list {
+    padding: 1rem 25rem;
+  }
+  .FAQ-get-started-email {
+    transform: translateX(16%);
+  }
+  footer {
+    padding: 2rem 20rem;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .footer-row-2 {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .footer-row-1,
+  .footer-row-3,
+  .footer-row-4 {
+    align-self: flex-start;
+  }
+}
+
